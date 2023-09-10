@@ -12,7 +12,7 @@ if __name__ == "__main__":
         case "encode":
             f = open(args.output, "wb")
             encoded = opglib.encode(args.input)
-            f.write(encoded)
+            f.write(encoded.encode())
             print(f"Finished encoding {args.input} and saved to {args.output}")
         case "decode":
             f = open(args.output, "wb")
